@@ -22,14 +22,16 @@ public class MainFrame extends JFrame{
         this.add(sp); sp.setVisible(false);
         this.add(sp2); sp2.setVisible(false);
         this.add(sp3); sp3.setVisible(false);
-        this.setBounds(100, 100, 400, 200);
+        this.setBounds(100, 100, 1000, 600);
         /////////////////////////////////////////////////////////////////////////
     }
     public static void main(String[] args) {
         
     	MainFrame mf = new MainFrame();
-        mf.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    	mf.setDefaultCloseOperation(EXIT_ON_CLOSE);
         mf.setVisible(true);
+
+      
     }
     public void PanelChange(JPanel jp, String str){
        
