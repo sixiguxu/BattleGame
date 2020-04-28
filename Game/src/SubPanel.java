@@ -19,9 +19,12 @@ public class SubPanel extends JPanel {
         this.setName(s);
         this.setLayout(null);
         this.setSize(400, 200);
+        
+        //ここ変えると文字の表示と位置選択/////////////////////////////////////
         JLabel paneltitle = new JLabel("これは"
                 +getClass().getCanonicalName()+"クラスのパネルです");
         paneltitle.setBounds(0, 5, 400, 40);
+        ///////////////////////////////////////////////////////////////////////
         this.add(paneltitle);
         btn.setBounds(150, 50, 200, 40);
         btn.addActionListener(new ActionListener(){
@@ -30,8 +33,10 @@ public class SubPanel extends JPanel {
             }
         });
         this.add(btn);
+      //h - 色相成分,s - 色の彩度,b - 色の明度///////////////////////////////
         Float f = (float) Math.random();
         this.setBackground(Color.getHSBColor(f, 0.5f, 0.8f));
+      /////////////////////////////////////////////////////////////////////////
     }
     public void pc(){
         mf.PanelChange((JPanel)this, mf.PanelNames[0]);

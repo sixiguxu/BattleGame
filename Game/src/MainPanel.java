@@ -21,10 +21,14 @@ public class MainPanel extends JPanel {
         this.setName("mp");
         this.setLayout(null);
         this.setSize(400, 200);
+        //ここ変えると文字の表示と位置選択////////////////////////////////////
         paneltitle = new JLabel("これは"
                 +getClass().getCanonicalName()+"クラスのパネルです");
         paneltitle.setBounds(0, 5, 400, 40);
+        //////////////////////////////////////////////////////////////////////
         this.add(paneltitle);
+
+        // ボタン追加//////////////////////////////////////////////////////////
         btn = new JButton("SubPanelに移動");
         btn.setBounds(20, 50, 150, 40);
         btn.addActionListener(new ActionListener(){
@@ -49,7 +53,11 @@ public class MainPanel extends JPanel {
             }
         });
         this.add(btn3);
+        /////////////////////////////////////////////////////////////////////////
+
+        //h - 色相成分,s - 色の彩度,b - 色の明度/////////////////////////////////
         this.setBackground(Color.getHSBColor(65, 0.7f, 0.9f));
+        /////////////////////////////////////////////////////////////////////////
     }
     public void pc(String str){
         mf.PanelChange((JPanel)this, str);
