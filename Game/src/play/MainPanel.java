@@ -1,11 +1,10 @@
+package play;
 
 
-//package Game;
-
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -15,12 +14,31 @@ public class MainPanel extends JPanel {
     JLabel paneltitle;
     MainFrame mf;
     String str;
+    
+    int iii = 0;
     public MainPanel(MainFrame m,String s){
+
         mf = m;
         str = s;
         this.setName("mp");
         this.setLayout(null);
         this.setSize(400, 200);
+
+      //write///////////////
+        
+       // if(iii == 0) {
+        mf.setBounds(0, 0, 1000, 600);
+        ImageIcon i = new ImageIcon("src/game/violet.jpg");
+        ImageIcon resized = PictureBuilder.resizeIcon(i,1000, 600);
+        JLabel l = new JLabel(i);
+    	mf.add(l);
+    	mf.setVisible(true);
+    	iii = 1;
+      //  }
+        
+       
+        /////////////////////
+
         //ここ変えると文字の表示と位置選択////////////////////////////////////
         paneltitle = new JLabel("これは"
                 +getClass().getCanonicalName()+"クラスのパネルです");
@@ -56,8 +74,10 @@ public class MainPanel extends JPanel {
         /////////////////////////////////////////////////////////////////////////
 
         //h - 色相成分,s - 色の彩度,b - 色の明度/////////////////////////////////
-        this.setBackground(Color.getHSBColor(65, 0.7f, 0.9f));
+       // this.setBackground(Color.getHSBColor(65, 0.7f, 0.9f));
         /////////////////////////////////////////////////////////////////////////
+
+
     }
     public void pc(String str){
         mf.PanelChange((JPanel)this, str);

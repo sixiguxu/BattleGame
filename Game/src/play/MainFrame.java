@@ -1,3 +1,4 @@
+package play;
 
 
 //package Game;
@@ -18,11 +19,12 @@ public class MainFrame extends JFrame{
     public MainFrame(){
     	
     	// 1つ目画面表示、残りを非表示、サイズ位置設定, 追加した画面を非表示/////
-        this.add(mp); mp.setVisible(true);
+    	this.add(mp); mp.setVisible(true);
+        
         this.add(sp); sp.setVisible(false);
         this.add(sp2); sp2.setVisible(false);
         this.add(sp3); sp3.setVisible(false);
-        this.setBounds(100, 100, 400, 200);
+        this.setBounds(100, 100, 1000, 600);
         /////////////////////////////////////////////////////////////////////////
     }
     public static void main(String[] args) {

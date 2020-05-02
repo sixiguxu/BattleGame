@@ -1,3 +1,4 @@
+package play;
 
 //package Game;
 
@@ -19,6 +20,7 @@ public class SubPanel extends JPanel {
         this.setName(s);
         this.setLayout(null);
         this.setSize(400, 200);
+        
         
         //ここ変えると文字の表示と位置選択/////////////////////////////////////
         JLabel paneltitle = new JLabel("これは"

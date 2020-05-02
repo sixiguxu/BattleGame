@@ -1,3 +1,4 @@
+package play;
 //package panels;
  
 import javax.swing.JPanel;
