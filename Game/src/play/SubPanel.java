@@ -19,7 +19,7 @@ public class SubPanel extends JPanel {
         str = s;
         this.setName(s);
         this.setLayout(null);
-        this.setSize(400, 200);
+        this.setSize(1000, 600);
         
         
         //ここ変えると文字の表示と位置選択/////////////////////////////////////

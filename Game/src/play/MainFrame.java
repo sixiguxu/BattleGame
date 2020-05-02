@@ -30,8 +30,10 @@ public class MainFrame extends JFrame{
     public static void main(String[] args) {
         
     	MainFrame mf = new MainFrame();
-        mf.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    	mf.setDefaultCloseOperation(EXIT_ON_CLOSE);
         mf.setVisible(true);
+
+      
     }
     public void PanelChange(JPanel jp, String str){
        
