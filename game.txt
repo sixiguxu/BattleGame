@@ -1,0 +1,20 @@
+Battle class
+　mji表記 classを呼び出す
+
+
+mji表記 class
+　一文字ずつ出す
+
+
+エフェクト class
+
+
+Status　敵 class
+
+
+Status　自分 class
+
+
+コマンド選択 class
+　battle classに行動と文字列を送る
+
